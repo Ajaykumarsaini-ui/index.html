@@ -319,7 +319,7 @@
 }
 
 #live_video #live_video_left img {
-    /* object-fit: cover; */
+    object-fit: cover;
 
 }
 
@@ -335,8 +335,7 @@
     font-weight: 1000;
     line-height: 50px;
     letter-spacing: 0.2px;
-    max-width: 271px;
-    margin: 10px;
+    margin: 10px auto;
 
 }
 
@@ -529,7 +528,6 @@
     color: var(--para-color);
     margin: 20px auto;
     margin-bottom: 50px;
-    padding-right: 60px;
     display: flex;
     align-self: flex-start;
 
@@ -880,9 +878,8 @@
     color: var(--para-color);
     margin: 20px auto;
     margin-bottom: 50px;
-    padding-right: 60px;
     display: flex;
-    align-self:flex-start;
+    align-self: flex-start;
 
 
 }
@@ -920,7 +917,7 @@
     letter-spacing: 0.2px;
     color: var(--para-color);
     margin: 10px;
-    
+
 
 }
 
@@ -989,7 +986,6 @@
     color: var(--para-color);
     margin: 20px auto;
     margin-bottom: 50px;
-    padding-right: 60px;
     display: flex;
     align-self: flex-start;
 
@@ -1262,7 +1258,7 @@
 /* footer  */
 #footer {
     background-color: var(--primary-color);
-    height: 74px;
+    height: 70px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1272,8 +1268,12 @@
     font-family: var(--font-family);
     font-size: 14px;
     font-weight: 700;
-    line-height: 24px;
+    /* line-height: 24px; */
     letter-spacing: 0.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
 
 }
 
@@ -1287,30 +1287,167 @@
     cursor: pointer;
 }
 
+/* ----------media query ----------- */
 @media screen and (min-width:576px) and (max-width:768px) {
     #navbarNav {
         display: none;
     }
 
-    /* #all_items_content{
+    #footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 20px;
-    } */
+    }
 
-    /* #hero_section #hero_content_left h1 {
-        font-size: 55px;
-        font-weight: 700;
-        line-height: 60px;
-        letter-spacing: 0.2px;
-        margin: 10px auto;
-    } */
+    #footer_i span {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    #about_company #features {
+        align-items: flex-start;
+    }
+
+    #about_company #resources {
+        align-items: flex-start;
+    }
+
+    #about_company #legal {
+        align-items: flex-start;
+    }
+
+    #about_company #company_info {
+        align-items: flex-start;
+    }
+
+    #about_company #features h5 {
+        padding-left: 30px;
+    }
+
+    #about_company #resources h5 {
+        padding-left: 13px;
+    }
+
+    #about_company #legal h5 {
+        padding-left: 30px;
+    }
+
+    #about_company #company_info h5 {
+        padding-left: 8px;
+    }
+
+    #Get_Quality_Education .main_span,
+    #Get_Quality_Education .main_heading,
+    #Get_Quality_Education .main_para {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #Watch_Courses .main_span,
+    #Watch_Courses .main_heading,
+    #Watch_Courses .main_para {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    #Approdable_items .main_span,
+    #Approdable_items .main_heading,
+    #Approdable_items .main_para {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    #live_video #live_video_right {
+        display: flex;
+        align-items: center;
+    }
+
+    #Approdable_Packages_left {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    #Approdable_Packages #Approdable_Packages_left {
+        align-items: center;
+    }
 
 
 }
 
+/* -------------2nd media query----------- */
+
 @media screen and (min-width:300px) and (max-width:576px) {
+
+    #Approdable_Packages #Approdable_Packages_left {
+        align-items: center;
+    }
+    #live_video #live_video_right {
+        display: flex;
+        align-items: center;
+    }
+    #Get_Quality_Education .main_span,
+    #Get_Quality_Education .main_heading,
+    #Get_Quality_Education .main_para {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    #Approdable_Packages_left h2 {
+        text-align: center;
+        display: flex;
+        justify-self: center;
+    }
+
+    #Watch_Courses .main_span,
+    #Watch_Courses .main_heading,
+    #Watch_Courses .main_para {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    #Approdable_items .main_span,
+    #Approdable_items .main_heading,
+    #Approdable_items .main_para {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    #live_video_right {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Approdable_Packages_left {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+    }
 
     #navbarNav {
         display: none;
@@ -1333,7 +1470,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-right: 30px;
     }
 
 
@@ -1359,5 +1495,42 @@
         margin-bottom: 20px;
     }
 
+    #footer_i span {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #about_company #features {
+        align-items: flex-start;
+    }
+
+    #about_company #resources {
+        align-items: flex-start;
+    }
+
+    #about_company #legal {
+        align-items: flex-start;
+    }
+
+    #about_company #company_info {
+        align-items: flex-start;
+    }
+
+    #about_company #features h5 {
+        padding-left: 30px;
+    }
+
+    #about_company #resources h5 {
+        padding-left: 13px;
+    }
+
+    #about_company #legal h5 {
+        padding-left: 30px;
+    }
+
+    #about_company #company_info h5 {
+        padding-left: 8px;
+    }
 
 }
