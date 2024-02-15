@@ -1270,9 +1270,44 @@
 }
 
 /* ----------media query ----------- */
-@media screen and (min-width:576px) and (max-width:768px) {
+@media screen and (max-width:860px) and (min-width:768px) {
+    #button_navbar {
+        gap: 10px;
+    }
+
+    #navigation_menu {
+        gap: 40px;
+    }
+
     #navbarNav {
+        gap: 15px;
+    }
+
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    /* #navbarNav {
         display: none;
+    } */
+
+    #navigation_menu {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+        height: fit-content;
+        text-align: center;
+        justify-items: center;
+    }
+
+    #navbarNav {
+        width: 80vw;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    #button_navbar {
+        width: 87vw;
+        justify-content: right;
     }
 
     #footer {
@@ -1366,16 +1401,56 @@
         align-items: center;
     }
 
+    #button {
+        display: flex;
+    }
+
+
+    #Approdable_Packages {
+        margin: 40px auto;
+    }
+
+    #hero_section {
+        padding-top: 110px;
+    }
+
+
 
 }
 
 /* -------------2nd media query----------- */
 
-@media screen and (min-width:300px) and (max-width:576px) {
+@media screen and (max-width:576px) and (min-width:250px) {
 
     #Approdable_Packages #Approdable_Packages_left {
         align-items: center;
     }
+
+    #navigation_menu {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+        height: fit-content;
+        text-align: center;
+        justify-items: center;
+    }
+
+    #hero_section {
+        padding-top: 100px;
+    }
+
+    #navbarNav {
+        width: 70vw;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    #button_navbar {
+        width: 83vw;
+        justify-content: right;
+    }
+
 
     #live_video #live_video_right {
         display: flex;
@@ -1433,22 +1508,19 @@
 
     }
 
-    #navbarNav {
+    /* #navbarNav {
         display: none;
-    }
+    } */
 
     #hero_section #hero_content_left h1 {
         font-size: 40px;
         line-height: 50px;
     }
 
-    #button_navbar {
+    /* #button_navbar {
         display: none;
-    }
+    } */
 
-    #navigation_menu {
-        height: 60px;
-    }
 
     #navbar_brand {
         display: flex;
@@ -1516,5 +1588,29 @@
     #about_company #company_info h5 {
         padding-left: 8px;
     }
+
+    #hero_section #hero_content_left {
+        padding-top: 20px;
+    }
+
+    #button {
+        display: flex;
+    }
+
+    #hero_section #hero_content_left #learn_more {
+        width: 110px;
+    }
+
+    #hero_section #hero_content_left #join_btn {
+        width: 110px;
+
+    }
+
+
+    #Approdable_Packages {
+        margin: 40px auto;
+    }
+
+
 
 }
