@@ -222,6 +222,7 @@
     line-height: 20px;
     letter-spacing: 0.2px;
     padding-top: 10px;
+    outline: none;
 
 }
 
@@ -1235,7 +1236,7 @@
 #about_company #get_in_touch h5 {
     margin-left: 30px;
     font-family: var(--font-family);
-    font-size: 20pxpx;
+    font-size: 20px;
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0.1px;
@@ -1330,23 +1331,17 @@
         font-size: 23px;
     }
 
+    button.navbar-toggler {
+        border: none;
+        font-size: 25px;
+        color: #000000;
+    }
+
+
 
 }
 
 @media screen and (min-width:576px) and (max-width:768px) {
-
-    #footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #footer_i span {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 10px;
-    }
 
     #about_company #features {
         align-items: flex-start;
@@ -1439,6 +1434,22 @@
         padding-top: 110px;
     }
 
+    #footer_i span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    #footer p {
+        padding-top: 10px;
+    }
+
+    #footer {
+        height: 70px;
+    }
+
+
 
 
 }
@@ -1446,6 +1457,9 @@
 /* -------------2nd media query----------- */
 
 @media screen and (max-width:576px) and (min-width:250px) {
+    #Approdable_Packages #Approdable_Packages_right_first p {
+        padding-right: 5px;
+    }
 
     #Approdable_Packages #Approdable_Packages_left {
         align-items: center;
@@ -1507,18 +1521,12 @@
 
     }
 
-    /* #navbarNav {
-        display: none;
-    } */
 
     #hero_section #hero_content_left h1 {
         font-size: 40px;
         line-height: 50px;
     }
 
-    /* #button_navbar {
-        display: none;
-    } */
 
 
     #navbar_brand {
@@ -1553,11 +1561,24 @@
     #footer_i span {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        padding: 10px;
     }
+
+    #footer p {
+        padding-top: 10px;
+    }
+
+    #footer {
+        height: 70px;
+    }
+
 
     #about_company #features {
         align-items: flex-start;
+    }
+    #about_company #get_in_touch {
+        padding-right: 27px;
     }
 
     #about_company #resources {
