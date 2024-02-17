@@ -1264,7 +1264,6 @@
     font-family: var(--font-family);
     font-size: 14px;
     font-weight: 700;
-    /* line-height: 24px; */
     letter-spacing: 0.2px;
     display: flex;
     justify-content: center;
@@ -1334,10 +1333,9 @@
     button.navbar-toggler {
         border: none;
         font-size: 25px;
-        color: #000000;
+        color: transparent;
+        transition: none;
     }
-
-
 
 }
 
@@ -1565,20 +1563,25 @@
         padding: 10px;
     }
 
+    #footer {
+        margin-bottom: 0%;
+    }
+
     #footer p {
         padding-top: 10px;
     }
 
     #footer {
-        height: 70px;
+        height: 80px;
     }
 
 
     #about_company #features {
         align-items: flex-start;
     }
+
     #about_company #get_in_touch {
-        padding-right: 27px;
+        padding: auto;
     }
 
     #about_company #resources {
@@ -1630,7 +1633,4 @@
     #Approdable_Packages {
         margin: 40px auto;
     }
-
-
-
 }
